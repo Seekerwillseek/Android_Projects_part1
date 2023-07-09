@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9E9"
+    android:foregroundTint="#100F0F"
+    tools:context=".LoanDataEntry">
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="565dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="240dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="bottom|top"
+            android:text="Fill accurate information"
+            android:textColor="#8E8D8D"
+            android:textSize="22dp" />
+
+        <Spinner
+            android:id="@+id/spinnerloantype"
+            android:layout_width="227dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="50dp"
+            android:dropDownSelector="@android:drawable/btn_dropdown"
+            android:entries="@array/loantypes" />
+
+        <TableLayout
+            android:layout_width="307dp"
+            android:layout_height="258dp"
+            android:layout_marginLeft="40dp">
+
+            <TableRow
+                android:layout_width="150dp"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:id="@+id/textViewAmount"
+                    android:layout_width="153dp"
+                    android:layout_height="50dp"
+                    android:text="Amount"
+                    android:textColor="#8E8D8D"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Duration"
+                    android:textColor="#8E8D8D"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="159dp"
+                    android:layout_height="50dp"
+                    android:text="Processing fee"
+                    android:textColor="#8E8D8D"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextProcessingFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="133dp"
+                    android:layout_height="50dp"
+                    android:text="Other Charges"
+                    android:textColor="#8E8D8D"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextOtherCharges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Rate of interest"
+                    android:textColor="#8E8D8D"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editTextInterestRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="261dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="40dp">
+
+            <Button
+                android:id="@+id/buttonProcess"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="263dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="40dp">
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Reset" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp">
+
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:text="Exit        " />
+        </TableRow>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

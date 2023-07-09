@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LoanEMIcalculator</string>
+    <string-array name="users">
+        <item>Rutuja</item>
+        <item>Rushabh</item>
+        <item>Python</item>
+        <item>Android</item>
+        <item>PHP</item>
+    </string-array>
+
+    <string-array name="passwords">
+        <item>Rutuja123</item>
+        <item>Rushabh123</item>
+        <item>Python123</item>
+        <item>Android123</item>
+        <item>PHP123</item>
+    </string-array>
+
+    <string-array name="loantypes">
+        <item>Educational</item>
+        <item>Personal</item>
+        <item>Vehicle</item>
+        <item>Home</item>
+        <item>Other</item>
+    </string-array>
+</resources>
